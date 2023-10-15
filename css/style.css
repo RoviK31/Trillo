@@ -76,7 +76,7 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
-  background-color: orangered;
+  background-color: #fff;
   height: 80rem;
   flex: 1; }
 
@@ -174,7 +174,7 @@ body {
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transform: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s background-color 0.1s; }
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s background-color 0.1s; }
   .side-nav__item:hover::before, .side-nav__item--active::before {
     transform: scaleY(1);
     width: 100%; }
@@ -200,3 +200,18 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-start, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }

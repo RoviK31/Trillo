@@ -134,6 +134,7 @@
    font-size: 1.4rem;
    list-style: none;
    margin-top: 3.5rem;
+
   &__item{
     position: relative;
 
@@ -152,7 +153,7 @@
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transform: transform .2s,
+    transition: transform .2s,
                 width .4s cubic-bezier(1,0,0,1) .2s 
                 background-color .1s;
 
@@ -197,4 +198,54 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+}
+
+///////////////////////////
+// GALLERY
+
+.gallery{
+  display: flex;
+
+  &__photo{
+    width:100%;
+    display: block;
+  }
+}
+
+///////////////////////////
+// HOTEL OVERVIEW
+
+.overview{
+  display: flex;
+  // justify-content: space-between;
+
+  &__heading{
+    
+  }
+
+  &__stars{
+    margin-right: auto;
+  }
+
+  &__icon-start,
+  &__icon-location{
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location{
+  }
+
+  &__rating{
+
+  }
+
+  &__rating-average{
+
+  }
+
+  &__rating-count{
+
+  }
 }
