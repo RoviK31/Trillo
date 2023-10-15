@@ -154,13 +154,13 @@
     background-color: var(--color-primary);
     transform: scaleY(0);
     transition: transform .2s,
-                width .4s cubic-bezier(1,0,0,1) .2s 
+                width .4s cubic-bezier(1,0,0,1) .2s, 
                 background-color .1s;
 
               }
 
-  &__item:hover::before,
-  &__item--active::before{
+   &__item:hover::before, 
+   &__item--active::before{
     transform: scaleY(1);
     width: 100%;
   }
@@ -173,8 +173,10 @@
   &__link:visited{
     color: var(--color-grey-light-1);
     text-decoration: none;
+    text-transform: uppercase;
      display: block;
      padding: 1.5rem 3rem;
+     
      display: flex;
      align-items: center;
      position: relative;
